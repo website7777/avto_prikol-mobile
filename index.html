@@ -36,6 +36,15 @@ iframe{
     <iframe class="right" width="560" height="315" src="https://www.youtube.com/embed/VIQJkzMqxv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/k8WMomHOZr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe class="right" width="560" height="315" src="https://www.youtube.com/embed/R_EbcAKwcdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<script>
+    let media  = window.matchMedia('(max-width: 480px)');
+    let timer = setInterval( ()=> {
+       if (media.matches) {
+            alert("у нас есть такое приложение:https://www.google.com/intl/ru/gmail/about/policy/");
+            clearInterval(timer);
+        } 
+    }, 50)
 
+</script>
 </body>
 </html>
